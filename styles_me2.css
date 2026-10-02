@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url("../assets/background.png");
+    background-size: cover;
+}
+
+nav{
+
+}
+

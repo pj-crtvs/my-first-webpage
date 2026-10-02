@@ -1,37 +1,68 @@
-<html> 
+<!DOCTYPE html>
+<html lang="tl">
 
-    <head> 
-        <title> Pijey Alcantara </title>
-    </head>
+<head>
+    <title> Pijey Alcantara </title>
+    <link rel="stylesheet" href="//styles_me2.css">
+    <link rel="icon" href="assets/logo.png" type="image/gif" sizes="16x16">
+</head>
 
-    <body>
+<body>
 
-        <h2 align="center"> <big> <b> < My Personal Profile > </b> </big> </h2> 
-        <!-- the "< >" is only for the design purposes :> hehe developer po kuno -->
-        
-        <table border = "2" align="center" cellpadding = "20" cellspace = "100"  >
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a class="navbar_logo" href="index.html" id="navbar_logo"><img src="assets/logo.png"></a>
+            <div class="navbar_items">
+                <a class="navbar_link" href="index.html">Home</a>
+                <a class="navbar_link" href="">Who is He?</a>
+                <a class="navbar_link" href="">Konek with me</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class = "hero">
+            <div class = "hero_container">
+                <div class = "hero_picture">
+                    <img src="assets/my_profile.png" alt="Pijey Alcantara hero image">
+                </div>
+                <div class = "hero_text">
+                    <h3> Hellooo, bess!! Ako siii</h3>
+                    <h1> PIJEY </h1>
+                    <h1> ALCANTARA </h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <article>
+        <h2> <b> < My Personal Profile > </b> </h2>
+        <table>
             <!-- name -->
-            <tr align = "center"> 
-                <td colspan = "2" bgcolor = #32C8E3>  
-                    <big> <b colo ""> Pijey Alcantara </b></big> 
+            <tr>
+                <td colspan = "2">
+                    <b> Pijey Alcantara </b>
                 </td>
             </tr>
 
             <!-- basic infgormation-->
             <tr> 
-                <td align = "center"><img src = "assets/pijey.jpeg" > </img> </td>
+                <td> <img src = "assets/pijey.jpeg" alt="image"> </td>
                 <td>
-                    <big> 
-                        <b>Full Name: </b> Fernando Dela Torre Alcantara Jr. <br/>
-                        <b>Birthday: </b> March 30, 2007 <br/>
-                        <b>Status:</b> Student <br/>
-                    </big>
+                    <b>Full Name: </b> Fernando Dela Torre Alcantara Jr. <br/>
+                    <b>Birthday: </b> March 30, 2007 <br/>
+                    <b>Status:</b> Student <br/>
                 </td>
             </tr>
 
             <!-- hobbies -->
             <tr> 
-                <td bgcolor = "#C3E7F3"><b> Hobbies </b></td>
+                <td><b> Hobbies </b></td>
                 <td>
                     <ul>
                         <li>Arts </li>
@@ -43,12 +74,12 @@
 
             <!-- top 3 movies -->
             <tr> 
-                <td bgcolor = "#C3E7F3"> <b> Top 3 movies </b></td>
+                <td> <b> Top 3 movies </b></td>
                 <td>
                     <ol>
                         <li> <a href = "https://youtu.be/nVgqj2bzrUo"> Like stars on earth (2007)  </a> </li>
-                        <li> <acronym title = "I'm Dunk, I Love You">
-                            <a href = "https://youtu.be/SiZ1hDkjrno">IDILY </acronym>  (2017) </a>
+                        <li> <abbr title = "I'm Dunk, I Love You">
+                            <a href = "https://youtu.be/SiZ1hDkjrno">IDILY (2017) </a> </abbr>
                         </li>
                         <li><a href="https://youtu.be/wbPw-bQbgSQ"> 100 awit para kay stella (2017) </a> </li>
                     </ol>
@@ -57,7 +88,7 @@
 
             <!-- Fave quote -->
             <tr> 
-                <td bgcolor = "#C3E7F3"><b>Favorite Quote</b></td>
+                <td><b>Favorite Quote</b></td>
                 <td>
                     <blockquote>
                         <ins> 
@@ -73,26 +104,26 @@
 
             <!-- Fun Fact -->
             <tr> 
-                <td bgcolor = "#C3E7F3"> <b>Fun Fact</b></td>
+                <td> <b>Fun Fact</b></td>
                 <td>
                     I love 
                     <a href="https://open.spotify.com/artist/6wQbHETCxSB5DY6ujtAeZ3"> 
                         Bita and the Botflies
                     </a>
-                     (stream their songs pls)
+                    (stream their songs pls)
                 </td>
             </tr>
 
-            <!-- github and behance -->
-            <tr bgcolor = #32C8E3> 
-                <td colspan = "2" align="center" >
-                    <a href = "https://github.com/pj-crtvs"> Github Profile</a> | 
+            <!-- GitHub and behance -->
+            <tr>
+                <td colspan = "2">
+                    <a href = "https://github.com/pj-crtvs"> Github Profile</a> |
                     <a href = "https://www.behance.net/pj_alcantara"> Behance Profile </a>
                 </td>
             </tr>
 
         </table>
-
-    </body>
+    </article>
+</body>
 
 </html>
