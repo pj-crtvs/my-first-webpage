@@ -1,14 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: 'Cubao';
+    src: url('assets/fonts/cubao-free-regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-dark: #0a1118;
+    --color-teal: #0f4c5c;
+    --color-cyan: #25bab9;
+    --color-orange: #ea9612;
+    --text-light: #ece1bb;
+    --text-muted: #8a96a5;
+    --text-dark: #0f172a;
+}
+
 *{
     box-sizing: border-box;
-
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-image: url("../assets/background.png");
-    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: var(--color-dark);
+    background-image:
+            linear-gradient(#12252B, 1px, transparent 1px),
+            linear-gradient(90deg, #12252B 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: var(--text-light);
+    line-height: 1.5;
 }
 
-nav{
+h1 {
+    font-family: 'Cubao', sans-serif;
+    text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6, p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.navbar {
+    width: 100%;
+    padding: 16px 40px;
+    background: rgba(16, 27, 39, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-teal);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_logo img {
+    height: 38px;
+    width: auto;
+    display: block;
+}
+
+.navbar_items {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar_link {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.navbar_link:hover {
+    color: var(--color-cyan);
+    font-style: italic;
+}
+
+
+.hero {
+    padding: -20px -500px;
+    max-width: 2000px;
+}
+
+.hero_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero_picture img {
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.4s ease;
+    margin-bottom: -50px;
+    z-index: -30;
+}
+
+.hero_picture img:hover {
+    transform: scale(1.1) rotate(-1deg);
+}
+
+.hero_text {
+    max-width: 600px;
 
 }
 
+.hero_text h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.hero_text h1 {
+    font-size: 100px;
+    line-height: 0.95;
+}
+
+#name, #konnek_foot {
+    color: var(--color-cyan) !important;
+}
+#surname, #me {
+    color: var(--color-orange) !important;
+}
+
+.hero_text p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--text-muted);
+}
+.hero_text b {
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+.hobbies {
+    margin: 0 auto;
+    background-color: var(--color-orange);
+    border-radius: 20px;
+    min-height: 300px;
+    max-width: 1200px;
+    h1{
+        color: var(--text-dark);
+    }
+}
+
+.hobbies_container {
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    place-self: center;
+}
+
+.hobbies_span {
+    border: 1px solid var(--color-dark);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hobbies_span:hover {
+    transform: translateY(6px);
+    background: var(--color-dark);
+    h1{
+        color: var(--text-light);
+    }
+}
+
+.subsec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.hobbies_span h1 {
+    color: var(--text-dark); !important
+}
+
+
+.movies {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.movies_span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.movies_card {
+    border: 1px solid var(--color-teal);
+    border-radius: 18px;
+    padding: 16px;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.movies_card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-cyan);
+}
+
+.movies_card iframe {
+    width: 100%;
+    height: 210px;
+    border-radius: 12px;
+    border: none;
+}
+
+.movies_card a {
+    color: var(--text-light);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.movies_card a:hover {
+    color: var(--color-cyan);
+}
+
+
+.funfact {
+    padding: 40px 20px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.funfact_span {
+    background: var(--color-orange);
+    color: var(--text-dark);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.funfact_span a {
+    color: var(--color-dark);
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.funfact_span a:hover {
+    color: var(--text-dark);
+}
+
+.funfact_content{
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: var(--color-dark);
+    border-top: 1px solid var(--color-cyan);
+    padding: 45px 20px;
+}
+.footer_containertop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+
+.footer_item svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--text-light);
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.footer_item a {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.footer_item p{
+    text-align: center;
+}
+
+
+.footer_item a:link svg {
+    fill: var(--text-light);
+}
+
+.footer_item a:visited svg {
+    fill: var(--text-muted);
+}
+
+.footer_item a:hover svg {
+    fill: var(--color-cyan);
+    transform: translateY(-4px);
+}
+
+.footer_item p {
+    color: var(--text-muted);
+    text-align: center;
+}
+
+#foot_logo{
+    min-width: 300px;
+}
+
+#description{
+    border-top: 1px solid var(--color-teal);
+    padding: 20px;
+    margin-top: 30px;
+    max-width: 1200px;
+}
