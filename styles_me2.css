@@ -164,7 +164,8 @@ h2, h3, h4, h5, h6, p {
     display: flex;
     gap: 24px;
     max-width: 1200px;
-    place-self: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .hobbies_span {
